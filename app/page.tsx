@@ -1,14 +1,16 @@
 "use client"
 import { useState } from "react";
+import Navbar from "./_components/Navbar";
+import Hero from "./_components/Hero";
+import FeaturedDestination from "./_components/FeaturedDestination";
 
 export default function Home() {
-  const [count, setCount] = useState(0);
-  return (
-    <div>
-      <h1>Hello World</h1>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
-      <p>Count: {count}</p>
-    </div>
+    return (
+   <>
+    <Navbar/>
+    <Hero/>
+    <FeaturedDestination/>
+   </>
   );
 }
 
